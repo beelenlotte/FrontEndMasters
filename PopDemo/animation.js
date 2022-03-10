@@ -1,7 +1,7 @@
-//run npm parser-bundler, npm init, npm install popmotion, parcel index.html
+//run npm parser-bundler, npm init, npm install popmotion@8.1.24, parcel index.html
 
-const popmotion = require("popmotion");
-require("./useless");
+import popmotion from "popmotion";
+import "./useless";
 //destructuring
 const { styler, spring, listen, pointer, value } = popmotion;
 

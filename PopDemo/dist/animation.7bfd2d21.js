@@ -2779,17 +2779,21 @@ exports.valueTypes = valueTypes;
 },{"./action":"node_modules/popmotion/action/index.js","./reactions/multicast":"node_modules/popmotion/reactions/multicast.js","./reactions/value":"node_modules/popmotion/reactions/value.js","./animations/decay":"node_modules/popmotion/animations/decay/index.js","./animations/every-frame":"node_modules/popmotion/animations/every-frame/index.js","./animations/keyframes":"node_modules/popmotion/animations/keyframes/index.js","./animations/physics":"node_modules/popmotion/animations/physics/index.js","./animations/spring":"node_modules/popmotion/animations/spring/index.js","./animations/timeline":"node_modules/popmotion/animations/timeline/index.js","./animations/tween":"node_modules/popmotion/animations/tween/index.js","./input/listen":"node_modules/popmotion/input/listen/index.js","./input/multitouch":"node_modules/popmotion/input/multitouch/index.js","./input/pointer":"node_modules/popmotion/input/pointer/index.js","./input/pointer/mouse":"node_modules/popmotion/input/pointer/mouse.js","./compositors/chain":"node_modules/popmotion/compositors/chain.js","./compositors/composite":"node_modules/popmotion/compositors/composite.js","./compositors/crossfade":"node_modules/popmotion/compositors/crossfade.js","./compositors/delay":"node_modules/popmotion/compositors/delay.js","./compositors/merge":"node_modules/popmotion/compositors/merge.js","./compositors/parallel":"node_modules/popmotion/compositors/parallel.js","./compositors/schedule":"node_modules/popmotion/compositors/schedule.js","./compositors/stagger":"node_modules/popmotion/compositors/stagger.js","./calc":"node_modules/popmotion/calc.js","./easing":"node_modules/popmotion/easing.js","./transformers":"node_modules/popmotion/transformers.js","stylefire":"node_modules/stylefire/index.js","stylefire/css":"node_modules/stylefire/css/index.js","stylefire/svg":"node_modules/stylefire/svg/index.js","style-value-types":"node_modules/style-value-types/dist/style-value-types.es.js"}],"useless.js":[function(require,module,exports) {
 console.log('this is a useless javascript file');
 },{}],"animation.js":[function(require,module,exports) {
-//run npm parser-bundler, npm init, npm install popmotion, parcel index.html
-var popmotion = require("popmotion");
+"use strict";
 
-require("./useless"); //destructuring
+var _popmotion = _interopRequireDefault(require("popmotion"));
 
+require("./useless");
 
-var styler = popmotion.styler,
-    spring = popmotion.spring,
-    listen = popmotion.listen,
-    pointer = popmotion.pointer,
-    value = popmotion.value;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//run npm parser-bundler, npm init, npm install popmotion@8.1.24, parcel index.html
+//destructuring
+var styler = _popmotion.default.styler,
+    spring = _popmotion.default.spring,
+    listen = _popmotion.default.listen,
+    pointer = _popmotion.default.pointer,
+    value = _popmotion.default.value;
 var ball = document.querySelector(".box");
 var divStyler = styler(ball);
 var ballXY = value({
