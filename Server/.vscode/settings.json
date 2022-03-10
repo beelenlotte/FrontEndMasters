@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/df42e7b3-02a5-4890-a702-001cb4d0bc7d/resourceGroups/small-projects/providers/Microsoft.Web/sites/my-first-little-project-complements",
+    "appService.deploySubpath": "."
+}
